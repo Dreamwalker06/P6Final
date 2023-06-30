@@ -1,0 +1,25 @@
+@import "../../index.scss";
+
+.tags {
+    display: flex;
+    gap:15px;
+    button {
+        width: 100px;
+        background-color:$primary-color1;
+        color: white;
+        height: 35px;
+        font-size: 14px;
+        align-items: center;
+        border: none;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 568px) {
+    .tags {
+        button {
+            font-size: 10px;
+            width: 20%;
+        }
+    }
+}

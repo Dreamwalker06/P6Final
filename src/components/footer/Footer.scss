@@ -1,0 +1,33 @@
+.footer {
+    display: flex;
+    background-color: black;
+    align-items: center;
+    height: 209px;
+    flex-direction: column;
+    margin: 3% -6.8% 0% -6.8%;
+    
+    .footer-text {
+        color: white;
+        margin-top: 28.56px;
+        font-size: 24px;
+    }
+
+}
+
+.footer img {
+  padding-top: 66px;
+}
+
+@media (max-width: 568px) {
+  
+.footer {
+  
+  .footer-text {
+    font-size: 12px;
+    width: 40%;
+    margin-top: 15px;
+    text-align: center;
+  }
+}  
+
+}

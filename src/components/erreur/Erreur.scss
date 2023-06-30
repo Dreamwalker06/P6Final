@@ -1,0 +1,44 @@
+@import "../../index.scss";
+
+.erreurImage {
+    width: 597px;
+    height: 263;
+}
+
+.erreurPage {
+    margin-top: 139px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 139px;
+    color: $primary-color1;
+
+}
+
+.erreurTextOops {
+    font-size: 36px;
+    text-align: center;
+}
+
+.erreurTextRedirection {
+    font-size: 18px;
+    color :$primary-color1;
+    text-decoration: underline
+}
+
+@media (max-width: 568px) {
+    .erreurImage {
+        width: 198px;
+        height: 99px;
+    }
+    .erreurTextOops {
+        font-size: 18px;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+}
+.erreurTextRedirection {
+   margin-bottom: 100px;
+}
+}

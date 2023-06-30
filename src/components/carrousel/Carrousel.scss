@@ -1,0 +1,63 @@
+.imgCarrousel {
+    position: relative;
+    height: 415px;
+  
+    & .leftArrow,
+    & .rightArrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 40px;
+      padding: 0px 20px;
+      box-sizing: content-box;
+      cursor: pointer;
+    }
+  
+    & .leftArrow {
+      left: 0;
+    }
+  
+    & .rightArrow {
+      right: 0;
+    }
+    .imageCountText {
+        position: absolute;
+        bottom:0;
+        left: 50%;
+        color: white;
+        padding-bottom: 20px;
+      }
+  }
+  @media (max-width: 1044px) {
+    .imgCarrousel {
+      
+      
+        & .leftArrow,
+        & .rightArrow {
+
+          width: 30px;
+ 
+        }
+      
+    }
+}
+
+  @media (max-width: 568px) {
+    .imgCarrousel {
+      
+      
+        & .leftArrow,
+        & .rightArrow {
+
+          width: 20px;
+ 
+        }
+      
+        .imageCountText {
+          display: none;
+          }
+      }
+}
+
+
+

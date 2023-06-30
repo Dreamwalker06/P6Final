@@ -1,0 +1,35 @@
+@import "../../index.scss";
+
+.navigation {
+    display: flex;
+    align-items: center;
+    .nav-bar {
+            width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    gap: 5%;
+    font-size: 24px;
+    }
+        li {
+        color: $primary-color1
+        
+    }
+    .nav-bar .active {
+      text-decoration: underline;
+      color: $primary-color1;
+    }
+}
+
+@media (max-width: 568px) {
+  .navigation {
+    .nav-bar {
+      font-size : 12px;
+      gap: 20%;
+      text-transform: uppercase;
+    }
+    img {
+    content: url('../../../public/images/LOGOmobile.png');
+}
+}
+}

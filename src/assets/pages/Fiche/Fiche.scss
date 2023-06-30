@@ -1,0 +1,83 @@
+@import "../../../index.scss";
+
+
+
+.infoContainer {
+   display: flex;
+   justify-content: space-between;
+}
+
+.titleLocation {
+    color: $primary-color1;
+    margin-bottom: 20px;
+    .ficheTitle {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+    .ficheLocation {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+}
+
+.hostAndRating {
+    display: flex;
+    flex-direction: column;
+}
+.host {
+    display: flex;
+    align-items: center;
+
+    .hostName {
+        width: 80px;
+        color: $primary-color1;
+    
+    }
+    
+    .hostPicture {
+        border-radius: 60px;
+        height: 64px;
+    }
+}
+
+@media (max-width: 1044px) {
+    .titleLocation {
+        width: 70%;
+        .ficheLocation {
+            font-size: 18px;
+        }
+        .ficheTitle {
+            font-size: 24px;
+    }
+    
+    }
+}
+@media (max-width: 568px) {
+    .infoContainer {
+        display: flex;
+        flex-direction: column;
+    }
+    .hostAndRating {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .tagAndHostMobile {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .titleLocation {
+        width: 80%;
+        .ficheLocation {
+            font-size: 14px;
+        }
+        .ficheTitle {
+            font-size: 18px;
+    }
+    
+    }
+}
+
+
+

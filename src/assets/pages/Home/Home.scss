@@ -1,0 +1,36 @@
+.homeBanner {
+    position: relative;
+  }
+  
+  .homeBanner img {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    filter: brightness(70%);
+  }
+  
+  .homeBanner h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 48px;
+  }
+  
+  @media (max-width: 568px) {
+    .homeBanner img {
+        height: 110px;
+    }
+    .homeBanner h1 {
+        position: absolute;
+        top: 50%;
+        left: 36%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 24px;
+  }
+}

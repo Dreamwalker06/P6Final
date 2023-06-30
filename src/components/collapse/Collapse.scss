@@ -1,0 +1,130 @@
+@import "../../index.scss";
+
+.collapse {
+    color:$primary-color1;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+
+
+    button {
+        width: 100%;
+        background-color:$primary-color1;
+        color: white;
+        height: 50px;
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+        border: none;
+        border-radius: 10px;
+        justify-content: space-between;
+        padding-right: 20px;
+        
+    }
+    .collapse-title-text {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+      .collapse-title {
+        background-color: #F6F6F6;
+        padding : 20px;
+        font-size: 18px;
+      }
+    }
+}
+
+
+
+// Animation 
+
+.collapse-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease-out; /* Durée et type de transition souhaités */
+  }
+
+  .collapse-content.expanded {
+    max-height: 200px; /* Réglez la hauteur maximale souhaitée lorsque le collapsible est ouvert */
+  }
+
+  .collapse-content.closed {
+    transition-duration: 0.5s; /* Durée de transition plus courte pour la fermeture */
+  }
+  
+  .collapse-arrow {
+    transition: transform 0.5s ease; /* Durée et type de transition pour l'animation de rotation */
+  }
+  
+  .collapse-arrow.rotated {
+    transform: rotate(180deg); /* Rotation de 180 degrés */
+  }
+
+  .collapseFiche {
+    margin-top: 10px;
+    display: flex;
+    gap: 50px;
+     button {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      background-color: $primary-color1;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      gap: 50px;
+     padding : 5px 20px;
+      font-size: 24px;
+     }
+     .collapse-title-text {
+      width: 50%;
+      font-size: 18px;
+      .collapse-title {
+        background-color: #F6F6F6;
+        padding : 20px;
+        font-size: 18px;
+        color: $primary-color1;
+      }
+     }
+    }
+  
+
+    @media (max-width: 568px) {
+        .collapse {      
+            margin-left: 0px;
+            margin-right: 0px;
+            button {
+                height: 40px;
+                font-size: 13px;
+                padding-left: 10px;
+                padding-right: 10px;
+                
+            }
+            .collapse-title-text {
+              .collapse-title {
+                font-size: 13px;
+              }
+            }
+        }
+    
+
+    .collapseFiche {
+
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap:30px;
+
+         button {
+          font-size: 13px;
+         }
+         .collapse-title-text {
+          width: 100%;
+          font-size: 13px;
+          .collapse-title {
+            font-size: 13px;
+          }
+         }
+        }
+    }
