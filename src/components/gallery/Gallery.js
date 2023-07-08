@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import logementsDATA from "../../assets/data/logements.json";
 import { useParams } from "react-router-dom";
-import "./Carrousel.scss";
+import "./Gallery.scss";
 
 const Carrousel = () => {
   const carrouselStyle = {
@@ -10,8 +10,8 @@ const Carrousel = () => {
     marginBottom: "40px",
     marginTop: "40px",
   };
-  const { title } = useParams();
-  const logement = logementsDATA.find((logement) => logement.title === title);
+  const { id } = useParams();
+  const logement = logementsDATA.find((logement) => logement.id === id);
   const galleryPictures = logement.pictures;
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 

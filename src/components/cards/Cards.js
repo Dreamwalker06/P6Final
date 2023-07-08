@@ -7,7 +7,7 @@ const Card = () => {
   return (
     <div className="cards-container">
       {logementsDATA.map((logement) => (
-        <NavLink to={`/logements/${logement.title}`} key={logement.title}>
+        <NavLink to={`/logements/${logement.id}`} key={logement.id}>
           <div className="card" key={logement.id}>
             <div className="image-container">
               <div className="text-overlay">

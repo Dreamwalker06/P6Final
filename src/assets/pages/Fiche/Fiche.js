@@ -4,15 +4,15 @@ import Header from "../../../components/header/Header";
 import Footer from "../../../components/footer/Footer";
 import Collapse from "../../../components/collapse/Collapse";
 import Tags from "../../../components/tags/Tags";
-import Carrousel from "../../../components/carrousel/Carrousel";
+import Gallery from "../../../components/gallery/Gallery";
 import { useParams } from "react-router-dom";
 import "./Fiche.scss";
 import Error404 from "../Error404";
 import Rating from "../../../components/rating/Rating";
 
 const Fiche = () => {
-  const { title } = useParams();
-  const logement = logementsDATA.find((logement) => logement.title === title);
+  const { id } = useParams();
+  const logement = logementsDATA.find((logement) => logement.id === id);
 
   if (!logement) {
     return (
@@ -24,7 +24,7 @@ const Fiche = () => {
   return (
     <div>
       <Header />
-      <Carrousel />
+      <Gallery />
       <div className="infoContainer">
         <div className="titleLocation">
           <h1 className="ficheTitle">{logement.title}</h1>
