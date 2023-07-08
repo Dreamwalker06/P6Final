@@ -27,10 +27,12 @@
       flex-direction: column;
       margin-bottom: 20px;
       align-items: center;
+      
       .collapse-title {
         background-color: #F6F6F6;
         padding : 20px;
         font-size: 18px;
+        width: 90%;
       }
     }
 }
@@ -43,6 +45,8 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 1s ease-out; /* Durée et type de transition souhaités */
+    display: flex;
+    justify-content: center;
   }
 
   .collapse-content.expanded {
